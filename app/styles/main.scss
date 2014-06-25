@@ -18,41 +18,6 @@ body {
 	margin: 0;
 }
 
-nav {
-	width:100%;
-	height: 55px;
-	background-color: #1abc9c;
-	position: fixed;    
-	z-index: 10;
-	box-shadow: 0px 0px 6px 1px #000000;
-	a {
-		text-decoration: none;
-		color: black;
-		img {
-		height: 50px;
-		width: 85px;
-		margin: 2px 0 0 100px;
-		}
-	}
-}
-
-#navLogo {
-	font-size: 2em;
-	font-family: $logoFont;
-	#thick {
-		font-weight: bolder;
-		position: relative;
-		bottom: 12px;
-
-	}
-	#thin {
-		font-weight: lighter;
-		position: relative;
-		bottom: 12px;
-
-	}
-}
-
 a:hover {
 	opacity: .5;
 }
@@ -69,9 +34,14 @@ a:hover {
 
 header {
 	width: 100%;
-	height: 300px;
-	background-color: #2ecc71;
-	opacity: .9;
+	height: 400px;
+	background-color: rgba(46, 204, 113, .9);
+	img {
+		height: 400px;
+		width: 400px;
+		margin: 14px 0 0 37%;
+		z-index: 10;
+	}
 }
 
 #transLayer {
@@ -88,15 +58,25 @@ header {
 		font-family: Armata;
 		position: relative;
 		top: 60px;
-		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
 }
 
-#photosLayer {
+.photosLayer {
 	width: 100%;
 	height: 500px;
 	background-color: #2ecc71;
 	opacity: .9;
+	.photosContainer {
+		margin: 0 auto;
+		width: 80%;
+		height: 100%;
+		img {
+			height: 500px;
+			width: 33%;
+			float: left;
+		}
+	}
 }
 
 footer {
@@ -104,8 +84,47 @@ footer {
 	height: 300px;
 	background-color: #7f8c8d;
 	opacity: .9;
+	.map {
+		height: 300px;
+		width: 50%;
+		float: left;
+		img {
+			height: 300px;
+			width: 100%;
+			opacity: .9;
+		}
+	}
+	.contactInfo {
+		height: 300px;
+		width: 50%;
+		float: left;
+	}
 }
 
+nav {
+	width:100%;
+	height: 55px;
+	background-color: #1abc9c;
+	box-shadow: 0px 0px 6px 1px #000000;
+	a {
+		text-decoration: none;
+		color: black;
+	}
+}
+
+#navLogo {
+	font-size: 2em;
+	font-family: $logoFont;
+	margin-left: 100px;
+	position: relative;
+	top: 9px;
+	#thick {
+		font-weight: bolder;
+	}
+	#thin {
+		font-weight: lighter;
+	}
+}
 
 
 
