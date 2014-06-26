@@ -28,3 +28,8 @@ $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api
 		$('.temp').append('<img src="'+img.url_z+'">');
     });
 		});
+
+
+//jQuery swipe: http://swipejs.com Copyright (c) 2013 Brad Birdsall Licensed under the The MIT License (MIT).
+window.mySwipe = Swipe(document.getElementById('slider'));
+
