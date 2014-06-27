@@ -106,7 +106,25 @@ footer {
 	opacity: .9;
 }
 
-
+//FOR MOBILE: swipejs styles 
+.swipe {
+  overflow: hidden;
+  max-width: 480px;
+  height: 300px;
+  width: 300%;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  float:left;
+}
+.swipe-wrap > div {  
+  width:100%;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
 
 
 
