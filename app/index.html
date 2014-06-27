@@ -38,9 +38,16 @@
 
       <div class="photosLayer">
         <div class="photosContainer">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg">
+            <script type="text/template" id="bikePhotos">
+            <ul>
+            <% for(var i=0; i<photos.length; i++) { %>
+                <% var photo = photo[i]; %>
+                <li><img src="<% photo.url_z %>"></li>
+            </ul>
+            </script>
+          <!-- <img src="http://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg">
           <img src="http://wolbest.com/wp-content/uploads/2014/05/Breukelen-RawV2-Bicycle.1.jpg">
-          <img src="https://img1.etsystatic.com/000/0/5304180/il_fullxfull.264404549.jpg">
+          <img src="https://img1.etsystatic.com/000/0/5304180/il_fullxfull.264404549.jpg"> -->
         </div>
       </div>
 
@@ -77,33 +84,17 @@
       </nav>
 
 
-      <header>
-      </header>
-
-      <div id="transLayer">
-        <div id="transContainer">
-          <p>Bringing you the best in bicycle gear, equipment and community since 1999!</p>
-        </div>
-      </div>
-
-      <div id="photosLayer">
-    
     <!-- jQuery swipe -->
-         <div id='slider' class='swipe'>
+         <!-- <div id='slider' class='swipe'>
              <div class='swipe-wrap'>
                  <div></div>
                  <div></div>
                  <div></div>
              </div>
-         </div>
+         </div> -->
     <!-- end jQuery swipe -->
       </div>
       
-
-      <footer>
-      </footer>
-
-    
 
 
 
