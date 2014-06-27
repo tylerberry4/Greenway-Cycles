@@ -2,16 +2,15 @@
 
 * { @include box-sizing(border-box); }
 
-$logoFont:    Maven, sans-serif;
+$mainFont:    Lato, sans-serif;
 $primary-color: #333;
 
 html { 
-  background: url(http://images.singletracks.com/blog/wp-content/uploads/2014/05/Bear-Brook-JacksPerson1.jpg) no-repeat center center fixed; 
+  background: url(http://i.imgur.com/Kv0QPkZ.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
 }
 
 body {
@@ -34,47 +33,59 @@ a:hover {
 
 header {
 	width: 100%;
-	height: 400px;
+	height: 325px;
 	background-color: rgba(46, 204, 113, .9);
 	img {
-		height: 400px;
-		width: 400px;
-		margin: 14px 0 0 37%;
-		z-index: 10;
+		height: 300px;
+		width: 300px;
+		margin: 13px 0 0 40%;
 	}
 }
 
-#transLayer {
+.transLayer {
 	width: 100%;
 	height: 300px;
-	#transContainer {
+	.transContainer {
 		width: 970px;
 		margin: 0 auto;
 	}
-	p {
+	#transPara {
 		text-align: center;
-		color: #ecf0f1;
-		font-size: 3em;
-		font-family: Armata;
+		color: white;
+		font-size: 2.6em;
+		font-family: $mainFont;
 		position: relative;
-		top: 60px;
-		text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		top: 75px;
+		text-shadow: -3px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
+		text-transform: uppercase;
 	}
+	#transPara2 {
+		text-align: center;
+		color: white;
+		font-size: 2.6em;
+		font-family: $mainFont;
+		position: relative;
+		top: 45px;
+		text-shadow: -3px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
 }
+}
+
+
 
 .photosLayer {
 	width: 100%;
-	height: 500px;
-	background-color: #2ecc71;
-	opacity: .9;
+	height: 437px;
+	background-color: rgba(46, 204, 113, .9);
 	.photosContainer {
 		margin: 0 auto;
-		width: 80%;
+		width: 100%;
 		height: 100%;
 		img {
-			height: 500px;
-			width: 33%;
+			height: 437px;
+			width: 33.3%;
 			float: left;
+			border-radius: 50%;
+			padding: 10px;
 		}
 	}
 }
@@ -91,7 +102,7 @@ footer {
 		img {
 			height: 300px;
 			width: 100%;
-			opacity: .9;
+			opacity: .9
 		}
 	}
 	.contactInfo {
@@ -108,13 +119,13 @@ nav {
 	box-shadow: 0px 0px 6px 1px #000000;
 	a {
 		text-decoration: none;
-		color: black;
+		color: white;
 	}
 }
 
 #navLogo {
 	font-size: 2em;
-	font-family: $logoFont;
+	font-family: Maven pro;
 	margin-left: 100px;
 	position: relative;
 	top: 9px;
@@ -123,6 +134,30 @@ nav {
 	}
 	#thin {
 		font-weight: lighter;
+	}
+}
+
+footer {
+	color: white;
+	font-family: Armata;
+	div {
+
+	}
+	h2 {
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		display: block;
+		color: white;
+		font-family: Armata;
+		margin: 25px;
+		position: relative;
+		padding-left: 125px;
+		i {
+			font-size: 40px;
+			margin-right: 15px;
+		}
 	}
 }
 
