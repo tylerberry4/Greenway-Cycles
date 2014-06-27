@@ -25,11 +25,11 @@ $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api
 		var photos = bikeImgs.photos.photo;
 		$.each(photos, function(i, img) {
 		//place the image link in the html element
-		$('.swipe-wrap').append('<img src="'+img.url_z+'">');
+		$('#photosLayer').append('<img src="'+img.url_z+'">');
     });
 		});
 
 
 //jQuery swipe: http://swipejs.com Copyright (c) 2013 Brad Birdsall Licensed under the The MIT License (MIT).
 
-Slider = $('#slider').Swipe().data('Swipe');
+//Slider = $('#slider').Swipe().data('Swipe');
