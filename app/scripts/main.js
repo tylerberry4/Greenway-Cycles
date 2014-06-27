@@ -20,17 +20,16 @@ var flickrKey = "f1bfffb9390361590e7654a60cb2b6bf";
 });*/
 
 //my code doctored by me
-$.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=290d74f906870cf6a4cf0a88b2189b95&tags=bike%2C+mountain&tag_mode=all&sort=interestingness-desc%2C+relevance&extras=url_z&per_page=3&format=json&nojsoncallback=1').done(function(bikeImgs) {
-		//loop through each object
-		var photos = bikeImgs.photos.photo;
-		$.each(photos, function(img) {
-			//console.log(img);
+$.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ef3e274943a7a5e9565dd1f165e3f763&tags=bike%2C+photography&tag_mode=all&sort=interestingness-desc%2C+relevance&extras=url_z&per_page=3&format=json&nojsoncallback=1').done(function(bikeImgs) {
+	//loop through each object
+	var markup = '';
+	var photos = bikeImgs.photos.photo;
+	_.each(photos, function(img) {
 		//populate the template
-		var flickrContent = $('#bikePhotos').html();
-		var flickrTemplate = _.template(flickrContent, img);
-		$('.photosContainer').html(flickrTemplate);
+		markup += '<img src="' + img.url_z + '">';
     });
-		});
+    $('.photosContainer').html(markup);
+});
 
 //Getting content into the image template in photosLayer div
 

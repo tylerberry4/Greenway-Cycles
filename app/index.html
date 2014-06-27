@@ -38,13 +38,6 @@
 
       <div class="photosLayer">
         <div class="photosContainer">
-            <script type="text/template" id="bikePhotos">
-            <ul>
-            <% for(var i=0; i<photos.length; i++) { %>
-                <% var photo = photo[i]; %>
-                <li><img src="<% photo.url_z %>"></li>
-            </ul>
-            </script>
           <!-- <img src="http://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg">
           <img src="http://wolbest.com/wp-content/uploads/2014/05/Breukelen-RawV2-Bicycle.1.jpg">
           <img src="https://img1.etsystatic.com/000/0/5304180/il_fullxfull.264404549.jpg"> -->
@@ -100,6 +93,7 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
+         <script src="bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
