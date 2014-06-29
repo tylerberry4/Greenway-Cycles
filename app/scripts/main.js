@@ -4,7 +4,7 @@ var flickrSecret = "b3ff002dc62fcf26" //secret
 //define variable for API key
 var flickrKey = "f1bfffb9390361590e7654a60cb2b6bf"; 
 
-$.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' + flickrKey + '&tags=bike%2C+trail&tag_mode=all&sort=interestingness-desc%2C+relevance&extras=url_z&per_page=3&format=json&nojsoncallback=1').done(function(bikeImgs) {
+$.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' + flickrKey + '&tags=bike%2C+trail%2c+bicycle&tag_mode=all&sort=interestingness-desc%2C+relevance&extras=url_z&per_page=3&format=json&nojsoncallback=1').done(function(bikeImgs) {
 	var markup = '';
 	var photos = bikeImgs.photos.photo;
 	_.each(photos, function(img) {
@@ -15,13 +15,10 @@ $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api
 	})
 });
     
-
-
 //jQuery swipe: http://swipejs.com Copyright (c) 2013 Brad Birdsall Licensed under the The MIT License (MIT).
-
 
 Slider = $('#slider').Swipe({  
     auto: 3000,  
-    continuous: true  
+    continuous: true,
 }).data('Swipe');
 
