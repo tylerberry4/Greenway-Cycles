@@ -11,7 +11,7 @@ $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api
 		//populate the template
 		markup += '<img src="' + img.url_z + '">';
     $('.photosContainer').html(markup);
-		$(".swipe-wrap").append('<img src="' + img.url_z + '">');
+		$(".swipe").append('<img src="' + img.url_z + '">');
 	})
 });
     
