@@ -10,8 +10,8 @@ $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api
 	_.each(photos, function(img) {
 		//populate the template
 		markup += '<img src="' + img.url_z + '">';
-    $('.photosContainer').html();
-		$(".swipe").append('<img src="' + img.url_z + '">');
+    $('.photosContainer').html(markup);
+		$(".swipe-wrap").append('<img src="' + img.url_z + '">');
 	})
 });
     
