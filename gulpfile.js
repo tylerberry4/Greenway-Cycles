@@ -137,5 +137,5 @@ var deploy = require("gulp-gh-pages");
 
 gulp.task('deploy', function () {
     gulp.src("./dist/**/*")
-        .pipe(deploy(options));
+        .pipe(deploy('https://github.com/tiy-durham-june2014-frontend/team-yellow.git', 'origin'));
 });
