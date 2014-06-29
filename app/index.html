@@ -26,8 +26,10 @@
     <body>
 
       <header>
+        <div class ="logo">
         <img src ="images/logoWhiteG.png" id="counterClock">
         <img src ="images/logoWhiteC.png" id="clock">
+        </div>
        </header>
 
       <div class="transLayer">
@@ -38,15 +40,26 @@
 
       <div class="photosLayer">
         <div class="photosContainer">
-       <!--    <img src="http://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg">
-          <img src="http://wolbest.com/wp-content/uploads/2014/05/Breukelen-RawV2-Bicycle.1.jpg">
-          <img src="https://img1.etsystatic.com/000/0/5304180/il_fullxfull.264404549.jpg"> -->
         </div>
       </div>
+          
+          <!-- jQuery swipe -->
+      <div id="Slider" class='swipe'>
+          <div class='swipe-wrap'>
+              <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              </ul>
+          </div>
+      </div>
+    <!-- end jQuery swipe -->
+
+     
 
       <div class="transLayer">
         <div class="transContainer">
-          <p id="transPara2">From mountain bikes to kids training wheels, we’ve got what you need. Come join use for our Saturday community events or just stop by to say hello!</p>
+          <p id="transPara2">From mountain bikes to kids training wheels, we’ve got what you need. Come join us for our Saturday community events or just stop by to say hello!</p>
         </div>
       </div>
 
@@ -76,15 +89,7 @@
       </nav>
 
 
-    <!-- jQuery swipe -->
-         <!-- <div id='slider' class='swipe'>
-             <div class='swipe-wrap'>
-                 <div></div>
-                 <div></div>
-                 <div></div>
-             </div>
-         </div> -->
-    <!-- end jQuery swipe -->
+  
       </div>
       
 
@@ -94,6 +99,7 @@
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
          <script src="bower_components/underscore/underscore.js"></script>
+         <script src="bower_components/swipe/swipe.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
