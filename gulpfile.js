@@ -131,3 +131,11 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch('app/images/**/*', ['images']);
     gulp.watch('bower.json', ['wiredep']);
 });
+
+//gh-pages
+var deploy = require("gulp-gh-pages");
+
+gulp.task('deploy', function () {
+    gulp.src("./dist/**/*")
+        .pipe(deploy('https://github.com/tiy-durham-june2014-frontend/team-yellow.git', 'origin'));
+});

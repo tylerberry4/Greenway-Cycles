@@ -39,7 +39,7 @@ header {
 }
 
 #counterClock {
-	position: relative;
+	//position: relative;
 	left: 40%;
 	top: 7%;
 	-webkit-animation:spin 13s linear infinite reverse;
@@ -49,7 +49,7 @@ header {
 }
 
 #clock {
-	position: relative;
+	//position: relative;
 	top: 40%;
 	left: 35.5%;
 	-webkit-animation:spin 13s linear infinite;
@@ -58,11 +58,17 @@ header {
   animation-delay: 2s;
  }
 
+ .logo {
+ 	text-align: center;
+ 	position: relative;
+ 	padding-top: 100px;
+ }
+
 .transLayer {
 	width: 100%;
 	height: 300px;
 	.transContainer {
-		width: 970px;
+		width: 100%;
 		margin: 0 auto;
 	}
 	#transPara {
@@ -92,6 +98,9 @@ header {
 	width: 100%;
 	height: 500px;
 	background-color: rgba(46, 204, 113, .9);
+	@media screen and (max-width: 480px) {
+			display: none;
+		}
 	.photosContainer {
 		margin: 0 auto;
 		width: 100%;
@@ -143,12 +152,18 @@ nav {
 
 //FOR MOBILE: swipejs styles 
 .swipe {
-  overflow: hidden;
-  max-width: 480px;
+  //overflow: hidden;
+  max-width: 100%;
   height: 300px;
-  width: 300%;
-  visibility: hidden;
+  width: 100%;
+  display: none;
   position: relative;
+  @media screen and (max-width: 480px) {
+  	display: block;
+  	margin: 50px 0;
+	border-bottom: solid white 2px;
+	border-top: solid black 2px;
+  	} 
 }
 .swipe-wrap {
   overflow: hidden;
