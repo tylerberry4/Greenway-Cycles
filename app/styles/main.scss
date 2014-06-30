@@ -15,9 +15,6 @@ html {
 
 body {
 	margin: 0;
-	@media screen and (max-width: 480px) {
-		display: none;
-		}
 }
 
 a {
@@ -60,7 +57,7 @@ header {
 
  .logo {
  	text-align: center;
- 	padding-top: 24px;
+ 	padding: 24px 0 0 45px;
  }
 
 .transLayer {
@@ -70,6 +67,7 @@ header {
 		max-width: 970px;
 		margin: 0 auto;
 	}
+	
 	#transPara {
 		text-align: center;
 		color: white;
@@ -79,7 +77,12 @@ header {
 		top: 75px;
 		text-shadow: -3px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
 		text-transform: uppercase;
+
+		@media screen and (max-width: 480px) {
+		font-size: 2em;
+		}
 	}
+
 	#transPara2 {
 		text-align: center;
 		color: white;
@@ -88,10 +91,12 @@ header {
 		position: relative;
 		top: 45px;
 		text-shadow: -3px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
-}
-}
 
-
+		@media screen and (max-width: 480px) {
+		font-size: 2em;
+		}
+	}
+}
 
 .photosLayer {
 	width: 100%;
@@ -100,6 +105,10 @@ header {
 	@media screen and (max-width: 480px) {
 			display: none;
 		}
+	// Alternative to slider 
+	// @media screen and (max-width: 480px) {
+	// 		height: 1390px;
+	// 		}
 	.photosContainer {
 		margin: 0 auto;
 		width: 100%;
@@ -112,6 +121,9 @@ header {
 			border-radius: 50%;
 			padding: 25px;
 			box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.29);
+			@media screen and (max-width: 480px) {
+			width: 100%;
+		}
 		}
 	}
 }
@@ -122,10 +134,20 @@ footer {
 	background-color: #7f8c8d;
 	opacity: .9;
 	overflow: hidden;
+	
+	@media screen and (max-width: 480px) {
+		height: 100%;
+		}
+
 	.map {
 		height: 300px;
 		width: 50%;
 		float: left;
+		
+		@media screen and (max-width: 480px) {
+		width: 100%;
+		}
+		
 		img {
 			height: 300px;
 			width: 100%;
@@ -136,6 +158,10 @@ footer {
 		height: 300px;
 		width: 50%;
 		float: left;
+		
+		@media screen and (max-width: 480px) {
+		width: 100%;
+		}
 	}
 }
 
@@ -144,6 +170,12 @@ nav {
 	height: 55px;
 	background-color: #1abc9c;
 	box-shadow: 0px 0px 6px 1px #000000;
+	
+	@media screen and (max-width: 480px) {
+		height: 110px;
+		text-align: center;
+		}
+	
 	a {
 		text-decoration: none;
 		color: white;
@@ -179,10 +211,16 @@ nav {
 #socialLinks {
 	float: right;
 	margin: 4px 100px;
+	@media screen and (max-width: 480px) {
+		margin-top: 12px;
+		display: block;
+		float: none;
+		text-align: center;
+		}
+
 	a {
 		font-size: 2.5em;
 		padding: 0 5px;
-
 	}
 }
 
@@ -192,6 +230,11 @@ nav {
 	margin-left: 100px;
 	position: relative;
 	top: 9px;
+
+	@media screen and (max-width: 480px) {
+		margin: 0;
+		}
+
 	#thick {
 		font-weight: bolder;
 	}
@@ -215,8 +258,9 @@ footer {
 		color: white;
 		font-family: Armata;
 		margin: 25px;
-		position: relative;
-		padding-left: 125px;
+		padding-left: 0;
+		text-align: center;
+
 		i {
 			font-size: 40px;
 			margin-right: 15px;
