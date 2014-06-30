@@ -152,9 +152,10 @@ nav {
 
 //FOR MOBILE: swipejs styles 
 .swipe {
-  //overflow: hidden;
+  overflow: hidden;
   height: 300px;
   width: 100%;
+  visibility: hidden;
   display: none;
   position: relative;
   @media screen and (max-width: 480px) {
@@ -167,13 +168,12 @@ nav {
 .swipe-wrap {
   overflow: hidden;
   float:left;
-
+  position: relative;
 }
 .swipe-wrap > div {  
   width:100%;
   position: relative;
   float: left;
-  overflow: hidden;
 }
 
 #socialLinks {
