@@ -11,14 +11,14 @@ $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api
 		//populate the template
 		markup += '<img src="' + img.url_z + '">';
     $('.photosContainer').html(markup);
-		$(".swipe").append('<img src="' + img.url_z + '">');
+		$('.swipe-wrap').html(markup);
 	})
 });
     
 //jQuery swipe: http://swipejs.com Copyright (c) 2013 Brad Birdsall Licensed under the The MIT License (MIT).
 
-Slider = $('#slider').Swipe({  
-    auto: 3000,  
+Slider = $('#Slider').Swipe({  
+    auto: 4000,  
     continuous: true,
 }).data('Swipe');
 

@@ -153,14 +153,13 @@ nav {
 //FOR MOBILE: swipejs styles 
 .swipe {
   //overflow: hidden;
-  max-width: 100%;
   height: 300px;
   width: 100%;
   display: none;
   position: relative;
   @media screen and (max-width: 480px) {
   	display: block;
-  	margin: 50px 0;
+  	margin: 20px 0;
 	border-bottom: solid white 2px;
 	border-top: solid black 2px;
   	} 
