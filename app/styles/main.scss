@@ -102,13 +102,13 @@ header {
 	width: 100%;
 	height: 500px;
 	background-color: rgba(46, 204, 113, .9);
-	@media screen and (max-width: 480px) {
-			display: none;
-		}	
-	// Alternative to slider 
 	// @media screen and (max-width: 480px) {
-	// 		height: 1390px;
-	// 		}
+	// 		display: none;
+	// 	}	
+	// Alternative to slider 
+	@media screen and (max-width: 480px) {
+			height: 1250px;
+			}
 	.photosContainer {
 		margin: 0 auto;
 		width: 100%;

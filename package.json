@@ -1,11 +1,13 @@
 {
   "name": "team-yellow",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.4.5"
+  },
   "devDependencies": {
     "connect": "^2.14.4",
     "connect-livereload": "^0.4.0",
-    "gulp": "^3.6.0",
+    "gulp": "^3.8.5",
     "gulp-autoprefixer": "^0.0.7",
     "gulp-bower-files": "^0.2.1",
     "gulp-cache": "^0.1.1",
@@ -15,6 +17,7 @@
     "gulp-flatten": "^0.0.2",
     "gulp-gh-pages": "^0.3.2",
     "gulp-imagemin": "^0.5.0",
+    "gulp-install": "^0.1.5",
     "gulp-jshint": "^1.5.3",
     "gulp-livereload": "^1.2.0",
     "gulp-load-plugins": "^0.5.0",
